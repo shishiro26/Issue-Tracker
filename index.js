@@ -44,7 +44,7 @@ async function askName() {
       name: "owner_name",
       type: "input",
       message: "Enter the Organization's name:",
-      default: "",
+      default: "Organisation Name",
       validate: (input) =>
         input.match(nameRegex) ? true : "Please enter a valid owner name.",
     },

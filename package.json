@@ -1,6 +1,6 @@
 {
   "name": "cli-issue-tracker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "find issues through your cli",
   "main": "index.js",
   "type": "module",
@@ -13,7 +13,9 @@
   },
   "author": "Shishiro",
   "license": "ISC",
-  "bin": "./index.js",
+  "bin": {
+    "npx-issue-tracker": "./index.js"
+  },
   "bugs": {
     "url": "https://github.com/shishiro26/Issue-Tracker/issues"
   },
