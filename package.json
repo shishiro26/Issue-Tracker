@@ -13,7 +13,7 @@
   },
   "author": "Shishiro",
   "license": "ISC",
-  "bin":"./index.js",
+  "bin": "./index.js",
   "bugs": {
     "url": "https://github.com/shishiro26/Issue-Tracker/issues"
   },
