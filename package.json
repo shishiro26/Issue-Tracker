@@ -1,0 +1,32 @@
+{
+  "name": "cli-issue-tracker",
+  "version": "1.0.0",
+  "description": "find issues through your cli",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishiro26/Issue-Tracker.git"
+  },
+  "author": "Shishiro",
+  "license": "ISC",
+  "bin":"./index.js",
+  "bugs": {
+    "url": "https://github.com/shishiro26/Issue-Tracker/issues"
+  },
+  "homepage": "https://github.com/shishiro26/Issue-Tracker#readme",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.12",
+    "nanospinner": "^1.1.0",
+    "octokit": "^3.1.2"
+  }
+}
