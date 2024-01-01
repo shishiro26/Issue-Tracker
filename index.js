@@ -1,4 +1,4 @@
-#!/usr/bin/env/node
+#!/usr/bin/env node
 
 import chalk from "chalk";
 import inquirer from "inquirer";
@@ -44,7 +44,7 @@ async function askName() {
       name: "owner_name",
       type: "input",
       message: "Enter the Organization's name:",
-      default: "Organisation Name",
+      default: "Organization Name",
       validate: (input) =>
         input.match(nameRegex) ? true : "Please enter a valid owner name.",
     },
@@ -103,7 +103,9 @@ async function labels() {
       console.log(
         chalk.yellow("\nNo issues found for the specified repository.")
       );
-      console.log(chalk.green("Thank you for using IssueTracker!"));
+      console.log(chalk.green("Thank you for using IssueTracker!\n"));
+      console.log(chalk.gray("Developed by Shishiro"));
+
       spinner.stop();
       return;
     }
@@ -120,7 +122,8 @@ async function labels() {
       console.log("\n-------------------------\n");
     });
 
-    spinner.success({ text: "Issues fetched successfully" });
+    spinner.success({ text: "Issues fetched successfully\n" });
+    console.log(chalk.gray("Developed by Shishiro"));
   } catch (error) {
     if (error.status === 404) {
       console.clear();
